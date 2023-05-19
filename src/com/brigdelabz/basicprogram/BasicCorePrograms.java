@@ -1,8 +1,8 @@
 package com.brigdelabz.basicprogram;
 
-import java.util.Scanner;
+  import java.util.Scanner;
 
-public class BasicCorePrograms {
+   public class BasicCorePrograms {
     public static void coinFlip() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter number of times to flip coin");
@@ -29,9 +29,19 @@ public class BasicCorePrograms {
             }
         }
     }
+    public static void printTable(int n){
+        int i;
+        for( i=1;i<=n;i++) {
+            if (i <= n && n < 31) {
+                System.out.println("2 ^"+n+" = "+2*i);
+            }
+        }
+    }
     public static void main(String[] args) {
         System.out.println("core java programs");
         coinFlip();
         leapYear();
+        int num=Integer.parseInt(args[0]);
+        printTable(num);
     }
 }
