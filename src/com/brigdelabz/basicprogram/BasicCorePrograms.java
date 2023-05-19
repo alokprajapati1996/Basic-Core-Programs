@@ -112,7 +112,23 @@ package com.brigdelabz.basicprogram;
                System.out.println("It is a Consonant.");
            }
        }
-       public static void main(String[] args) {
+       public static void findLargest() {
+           Scanner sc = new Scanner(System.in);
+           System.out.println("Enter the first number:");
+           int a = sc.nextInt();
+           System.out.println("Enter the second number:");
+           int b = sc.nextInt();
+           System.out.println("Enter the third number:");
+           int c = sc.nextInt();
+           if (a >= b && a >= c) {
+               System.out.println(a + " is the largest Number");
+           } else if (b >= a && b >= c) {
+               System.out.println(b + " is the largest Number");
+           } else {
+               System.out.println(c + " is the largest number");
+           }
+       }
+public static void main(String[] args) {
         System.out.println("core java programs");
         coinFlip();
         leapYear();
@@ -123,5 +139,6 @@ package com.brigdelabz.basicprogram;
         swapingTwoNumber();
         checkOddEven();
         vowelOrConsonant();
+        findLargest();
     }
 }
