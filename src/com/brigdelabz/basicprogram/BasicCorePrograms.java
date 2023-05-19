@@ -15,8 +15,27 @@ public class BasicCorePrograms {
             }
         }
     }
+
+    public static void leapYear() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter year in four digit");
+        int year = scan.nextInt();
+        if (year >= 1000) {
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+            {
+                System.out.println("Year is Leap year");
+            }
+            else{
+                System.out.println("year is not leap year");
+            }
+        }
+    }
+
+
+
     public static void main(String[] args) {
         System.out.println("core java programs");
         coinFlip();
+        leapYear();
     }
 }
