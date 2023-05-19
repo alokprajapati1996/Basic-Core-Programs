@@ -15,7 +15,6 @@ public class BasicCorePrograms {
             }
         }
     }
-
     public static void leapYear() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter year in four digit");
@@ -30,9 +29,6 @@ public class BasicCorePrograms {
             }
         }
     }
-
-
-
     public static void main(String[] args) {
         System.out.println("core java programs");
         coinFlip();
