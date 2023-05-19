@@ -99,7 +99,19 @@ package com.brigdelabz.basicprogram;
                System.out.println(num + " is odd");
        }
 
-
+       static void vowelOrConsonant() {
+           char ch = 'a';
+           if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o'
+                   || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I'
+                   || ch == 'O' || ch == 'U')
+           {
+               System.out.println("It is a Vowel.");
+           }
+           else
+           {
+               System.out.println("It is a Consonant.");
+           }
+       }
        public static void main(String[] args) {
         System.out.println("core java programs");
         coinFlip();
@@ -110,5 +122,6 @@ package com.brigdelabz.basicprogram;
         calculateQuotientRemainder();
         swapingTwoNumber();
         checkOddEven();
+        vowelOrConsonant();
     }
 }
