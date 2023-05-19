@@ -37,6 +37,17 @@ package com.brigdelabz.basicprogram;
             }
         }
     }
+    public static void harmonicNumber(){
+        float sum=0;
+        Scanner scan = new Scanner(System.in);
+        int num=scan.nextInt();
+        if(num!=0){
+            for(int i=1;i<=num;i++){
+              sum+=1/i;
+            }
+        }
+        System.out.println("nth harmonic value is:="+sum);
+    }
     public static void main(String[] args) {
         System.out.println("core java programs");
         coinFlip();
