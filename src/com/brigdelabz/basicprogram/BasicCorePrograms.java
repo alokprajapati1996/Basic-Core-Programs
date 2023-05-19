@@ -89,6 +89,15 @@ package com.brigdelabz.basicprogram;
         System.out.println("First number = " + first);
         System.out.println("Second number = " + second);
    }
+   public static void checkOddEven(){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+           int num = scan.nextInt();
+           if(num % 2 == 0)
+               System.out.println(num + " is even");
+           else
+               System.out.println(num + " is odd");
+       }
 
 
        public static void main(String[] args) {
@@ -100,5 +109,6 @@ package com.brigdelabz.basicprogram;
         primeFactors();
         calculateQuotientRemainder();
         swapingTwoNumber();
+        checkOddEven();
     }
 }
