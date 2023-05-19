@@ -76,6 +76,20 @@ package com.brigdelabz.basicprogram;
        System.out.println("Quotient when " + num1 + "/" + num2 + " is: " + quotient);
        System.out.println("Remainder when " + num1 + " is divided by " + num2 + " is: " + remainder);
    }
+   public static void swapingTwoNumber(){
+       int first = 10, second = 20;
+
+        System.out.println("--Before swap--");
+        System.out.println("First number = " + first);
+        System.out.println("Second number = " + second);
+       first = first+second;
+       second=first-second;
+       first=first-second;
+       System.out.println("--After swap--");
+        System.out.println("First number = " + first);
+        System.out.println("Second number = " + second);
+   }
+
 
        public static void main(String[] args) {
         System.out.println("core java programs");
@@ -85,5 +99,6 @@ package com.brigdelabz.basicprogram;
         printTable(num);
         primeFactors();
         calculateQuotientRemainder();
+        swapingTwoNumber();
     }
 }
